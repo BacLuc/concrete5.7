@@ -26,11 +26,11 @@ WEB-DATA:
     - /var/www/html
 
 web:
-  image: chriswayg/concrete5.7
+  image: bacluc/concrete5.8
   restart: always
   ports:
-  - "80:80"
-  - "443:443"
+  - "8080:80"
+  - "8443:443"
   links:
   - db
   volumes_from:

@@ -1,5 +1,6 @@
 FROM chriswayg/apache-php
-MAINTAINER Christian Wagner chriswayg@gmail.com
+MAINTAINER Lucius Bachmann lucius.bachmann@gmx.ch
+# Adapted from chriswayg/concrete5
 
 # This image provides Concrete5.7 at root of site
 
@@ -17,9 +18,9 @@ RUN apt-get update && \
     
 # Find latest download details at https://www.concrete5.org/get-started
 # - for newer version: change Concrete5 version# & download url & md5
-ENV CONCRETE5_VERSION 5.7.5.2
-ENV C5_URL https://www.concrete5.org/download_file/-/view/82243/
-ENV C5_MD5 61e48a8d4bf281a25420c3d2186a1a3d
+ENV CONCRETE5_VERSION 5-8.2.1
+ENV C5_URL http://www.concrete5.org/download_file/-/view/96959/
+ENV C5_MD5 00080d5a625ddbaece643894f67d57b1
 # nano and other commands will not work without this
 ENV TERM xterm
 

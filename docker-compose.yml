@@ -14,11 +14,11 @@ db:
     - ./data/var/lib/mysql:/var/lib/mysql
 
 web:
-  image: chriswayg/concrete5.7
+  image: bacluc/concrete5.8
   restart: always
   ports:
-  - "80:80"
-  - "443:443"
+  - "8080:80"
+  - "8443:443"
   links:
   - db
   log_opt:
